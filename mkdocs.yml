@@ -1,0 +1,9 @@
+site_name: HANA XSC Docs
+theme: material
+
+repo_name: ZhiminJenkins/docs
+repo_url: https://github.wdf.sap.corp/ZhiminJenkins/docs
+copyright: 'Copyright &copy; 2020 - SAP Cloud Platform'
+
+pages:
+
