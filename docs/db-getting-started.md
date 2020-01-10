@@ -130,6 +130,8 @@ context demo
 
 ## Data-Type Mapping from SAP HANA to CDS
 [SAP HANA to CDS Data-Type Mapping](https://help.sap.com/viewer/09b6623836854766b682356393c6c416/2.0.02/en-US/a83fe9b8de1c4f4bbee3eea675851a04.html)
+
+
 | SAP HANA Type (hdbtable) | CDS Type (hdbdd) |
 | :------------------------------|: --------------------| 
 |    NVARCHAR                      |   String                   |
