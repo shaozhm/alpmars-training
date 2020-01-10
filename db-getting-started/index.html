@@ -288,6 +288,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#hana-cds-localdate-utctimestamp" class="md-nav__link">
+    HANA CDS LocalDate &amp; UTCTimestamp
+  </a>
+  
+</li>
+      
       
       
       
@@ -365,6 +372,13 @@
         <li class="md-nav__item">
   <a href="#data-type-mapping-from-sap-hana-to-cds" class="md-nav__link">
     Data-Type Mapping from SAP HANA to CDS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hana-cds-localdate-utctimestamp" class="md-nav__link">
+    HANA CDS LocalDate &amp; UTCTimestamp
   </a>
   
 </li>
@@ -510,132 +524,41 @@
 <h2 id="associate-type">associate 和 type 类型生成的表字段</h2>
 <p><img alt="association" src="../images/association.png" /></p>
 <h2 id="data-type-mapping-from-sap-hana-to-cds">Data-Type Mapping from SAP HANA to CDS</h2>
-<table>
-<thead>
-<tr>
-<th align="left">SAP HANA Type (hdbtable)</th>
-<th align="left">CDS Type (hdbdd)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">NVARCHAR</td>
-<td align="left">String</td>
-</tr>
-<tr>
-<td align="left">SHORTTEXT</td>
-<td align="left">String</td>
-</tr>
-<tr>
-<td align="left">NCLOB</td>
-<td align="left">LargeString</td>
-</tr>
-<tr>
-<td align="left">TEXT</td>
-<td align="left">LargeString</td>
-</tr>
-<tr>
-<td align="left">VARBINARY</td>
-<td align="left">Binary</td>
-</tr>
-<tr>
-<td align="left">BLOB</td>
-<td align="left">LargeBinary</td>
-</tr>
-<tr>
-<td align="left">INTEGER</td>
-<td align="left">Integer</td>
-</tr>
-<tr>
-<td align="left">INT</td>
-<td align="left">Integer</td>
-</tr>
-<tr>
-<td align="left">BIGINT</td>
-<td align="left">Integer64</td>
-</tr>
-<tr>
-<td align="left">DECIMAL(p,s)</td>
-<td align="left">Decimal(p,s)</td>
-</tr>
-<tr>
-<td align="left">DECIMAL</td>
-<td align="left">DecimalFloat</td>
-</tr>
-<tr>
-<td align="left">DOUBLE</td>
-<td align="left">BinaryFloat</td>
-</tr>
-<tr>
-<td align="left">DAYDATE</td>
-<td align="left">LocalDate</td>
-</tr>
-<tr>
-<td align="left">DATE</td>
-<td align="left">LocalDate</td>
-</tr>
-<tr>
-<td align="left">SECONDTIME</td>
-<td align="left">LocalTime</td>
-</tr>
-<tr>
-<td align="left">TIME</td>
-<td align="left">LocalTime</td>
-</tr>
-<tr>
-<td align="left">SECONDDATE</td>
-<td align="left">UTCDateTime</td>
-</tr>
-<tr>
-<td align="left">LONGDATE</td>
-<td align="left">UTCTimestamp</td>
-</tr>
-<tr>
-<td align="left">TIMESTAMP</td>
-<td align="left">UTCTimestamp</td>
-</tr>
-<tr>
-<td align="left">ALPHANUM</td>
-<td align="left">hana.ALPHANUM</td>
-</tr>
-<tr>
-<td align="left">SMALLINT</td>
-<td align="left">hana.SMALLINT</td>
-</tr>
-<tr>
-<td align="left">TINYINT</td>
-<td align="left">hana.TINYINT</td>
-</tr>
-<tr>
-<td align="left">SMALLDECIMAL</td>
-<td align="left">hana.SMALLDECIMAL</td>
-</tr>
-<tr>
-<td align="left">REAL</td>
-<td align="left">hana.REAL</td>
-</tr>
-<tr>
-<td align="left">VARCHAR</td>
-<td align="left">hana.VARCHAR</td>
-</tr>
-<tr>
-<td align="left">CLOB</td>
-<td align="left">hana.CLOB</td>
-</tr>
-<tr>
-<td align="left">BINARY</td>
-<td align="left">hana.BINARY</td>
-</tr>
-<tr>
-<td align="left">ST_POINT</td>
-<td align="left">hana.ST_POINT</td>
-</tr>
-<tr>
-<td align="left">ST_GEOMETRY</td>
-<td align="left">hana.ST_GEOMETRY</td>
-</tr>
-</tbody>
-</table>
+<p><a href="https://help.sap.com/viewer/09b6623836854766b682356393c6c416/2.0.02/en-US/a83fe9b8de1c4f4bbee3eea675851a04.html">SAP HANA to CDS Data-Type Mapping</a>
+| SAP HANA Type (hdbtable) | CDS Type (hdbdd) |
+| :------------------------------|: --------------------| 
+|    NVARCHAR                      |   String                   |
+|    SHORTTEXT                     |   String                  |
+|    NCLOB | LargeString |
+|    TEXT   |   LargeString |
+|   VARBINARY |   Binary |
+|   BLOB  |  LargeBinary  |
+|  INTEGER  |   Integer   |
+|   INT |   Integer  |
+|   BIGINT   |   Integer64   |
+|  DECIMAL(p,s)  |   Decimal(p,s)   |
+|  DECIMAL    |   DecimalFloat  | 
+|  DOUBLE  |   BinaryFloat   |
+|   DAYDATE   |   LocalDate   |
+|   DATE   |    LocalDate |
+| SECONDTIME |   LocalTime   |
+|  TIME   |   LocalTime    |
+|  SECONDDATE   |   UTCDateTime   |
+|   LONGDATE    |    UTCTimestamp    |
+|  TIMESTAMP    |   UTCTimestamp   |
+|   ALPHANUM    |  hana.ALPHANUM |
+| SMALLINT | hana.SMALLINT |
+| TINYINT | hana.TINYINT |
+| SMALLDECIMAL | hana.SMALLDECIMAL |
+| REAL | hana.REAL |
+| VARCHAR |  hana.VARCHAR  |
+| CLOB  | hana.CLOB  |
+| BINARY | hana.BINARY |
+| ST_POINT | hana.ST_POINT |
+| ST_GEOMETRY |  hana.ST_GEOMETRY |</p>
+<h2 id="hana-cds-localdate-utctimestamp">HANA CDS LocalDate &amp; UTCTimestamp</h2>
+<p>LocalDate could be mapping to DATE or DAYDATE
+UTCTimestamp could be mapping to LONGDATE or TIMESTAMP</p>
                 
                   
                 
