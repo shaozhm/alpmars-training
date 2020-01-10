@@ -326,20 +326,42 @@
                 
                 <h2 id="_1">文件后缀解释</h2>
 <ul>
-<li>hdbschema - 建立数据库 schema 使用的文件，文件名为 schema 的名字，ALPMARS.hdbschema 文件内容</li>
+<li>hdbschema - 建立数据库 schema 使用的文件，文件名为 schema 的名字，ALPMARS.hdbschema 文件内容
+<div class="codehilite"><pre><span></span><span class="c1">//To define the HDB schema, you can use the following code: </span>
+
+<span class="nx">schema_name</span> <span class="o">=</span> <span class="s2">&quot;ALPMARS&quot;</span><span class="p">;</span>
+</pre></div></li>
 </ul>
-<p><img alt="ALPMARS.hdbschema" src="../images/alpmars-hdbschema.png" /></p>
 <p>说明: 上述文件激活以后，还需要配置相关的 object 权限，用户才能够看到。</p>
 <ul>
 <li>
 <p>.xsapp - 一个空文件</p>
 </li>
 <li>
-<p>.xsaccess - 配置web服务相关的一些访问控制或者安全设置，文件内容如下:</p>
+<p>.xsaccess - 配置web服务相关的一些访问控制或者安全设置，文件内容如下:
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+     <span class="s2">&quot;exposed&quot;</span> <span class="o">:</span> <span class="kc">true</span><span class="p">,</span>  
+
+     <span class="s2">&quot;authentication&quot;</span> <span class="o">:</span>                                            
+            <span class="p">{</span>
+               <span class="s2">&quot;method&quot;</span><span class="o">:</span> <span class="s2">&quot;Form&quot;</span>   
+            <span class="p">},</span>
+
+     <span class="s2">&quot;cache_control&quot;</span> <span class="o">:</span> <span class="s2">&quot;must-revalidate&quot;</span><span class="p">,</span> 
+
+     <span class="s2">&quot;cors&quot;</span> <span class="o">:</span>                      
+            <span class="p">{</span>
+             <span class="s2">&quot;enabled&quot;</span> <span class="o">:</span> <span class="kc">false</span>
+            <span class="p">},</span> 
+
+     <span class="s2">&quot;enable_etags&quot;</span> <span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+
+     <span class="s2">&quot;force_ssl&quot;</span> <span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+
+     <span class="s2">&quot;prevent_xsrf&quot;</span> <span class="o">:</span> <span class="kc">true</span>
+<span class="p">}</span>
+</pre></div></p>
 </li>
-</ul>
-<p><img alt=".xsaccess" src="../images/xsaccess.png" /></p>
-<ul>
 <li>hdbdd - 数据库定义文件，后面详细介绍</li>
 </ul>
 <h2 id="_2">激活文件</h2>
