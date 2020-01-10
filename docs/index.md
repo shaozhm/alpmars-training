@@ -16,10 +16,13 @@
 ![Create XS Project Dialog Snapshot 2](./images/create-project-4.png)
 ![Create Objects](./images/create-new-xs-project-5.png)
 * 最终形成的项目结构
-![Project Structure](./images/project-structure.png)
-## Project layout
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+![Project Structure](./images/project-structure.png)
+
+## 切换HANA Studio 的 Perspective
+* 在 SAP HANA Development 模式下
+  ![Development Prespective](./images/development-prespective-top-right.png)
+  - 我们可以看到本地 workspace 下的所有包结构，并且可以 checkout 项目
+  ![Development Prespective](./images/development-prespective.png)
+* 在 SAP HANA Administration Console 模式下
+  
