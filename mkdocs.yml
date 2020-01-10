@@ -1,4 +1,4 @@
-site_name: HANA XSC Docs
+site_name: HANA XSC 基础培训
 
 
 repo_name: ZhiminJenkins/docs
@@ -11,5 +11,5 @@ markdown_extensions:
 - pymdownx.superfences
 
 pages:
-- Introduction: 'index.md'
-- Getting Started: 'getting-started.md'
+- 开发环境介绍: 'index.md'
+- 使用hdbdd文件建立数据库表结构: 'hdbdd-getting-started.md'

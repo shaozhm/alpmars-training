@@ -15,7 +15,8 @@
 ![Create XS Project Dialog Snapshot 1](./images/create-project-3.png)
 ![Create XS Project Dialog Snapshot 2](./images/create-project-4.png)
 ![Create Objects](./images/create-new-xs-project-5.png)
-
+* 最终形成的项目结构
+![Project Structure](./images/project-structure.png)
 ## Project layout
 
     mkdocs.yml    # The configuration file.
