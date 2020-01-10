@@ -162,6 +162,8 @@ context demo
 | ST_POINT | hana.ST_POINT |
 | ST_GEOMETRY |  hana.ST_GEOMETRY |
 
+
+
 ## HANA CDS LocalDate & UTCTimestamp
 LocalDate could be mapping to DATE or DAYDATE
 UTCTimestamp could be mapping to LONGDATE or TIMESTAMP
