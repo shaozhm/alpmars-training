@@ -12,4 +12,5 @@ markdown_extensions:
 
 pages:
 - 建立开发环境: 'index.md'
-- XS项目文件及激活: 'db-getting-started.md'
+- XS项目文件及激活: 'xs-project.md'
+- HDBDD: 'db-getting-started.md'
