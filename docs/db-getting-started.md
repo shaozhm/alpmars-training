@@ -49,4 +49,7 @@ schema_name = "ALPMARS";
 
 ![add object privileges by system user](./images/add-object-privilege.png)
 
+## 查看 schema 
+授权用户可以使用 adminstration prespective 模式下 Catalog 目录下有 ALPMARS schema 及看到下面所有对象
 
+![schema view](./images/schema-view.png)
