@@ -36,7 +36,7 @@
     
     
       
-        <title>Getting started - HANA XSC 基础培训</title>
+        <title>XS项目开发介绍 - HANA XSC 基础培训</title>
       
     
     
@@ -77,6 +77,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#_1" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -99,7 +103,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Getting started
+                XS项目开发介绍
               
             </span>
           
@@ -210,8 +214,8 @@
 
 
   <li class="md-nav__item">
-    <a href=".." title="开发环境介绍" class="md-nav__link">
-      开发环境介绍
+    <a href=".." title="建立开发环境" class="md-nav__link">
+      建立开发环境
     </a>
   </li>
 
@@ -220,11 +224,52 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../hdbdd-getting-started.md" title="使用hdbdd文件建立数据库表结构" class="md-nav__link">
-      使用hdbdd文件建立数据库表结构
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        XS项目开发介绍
+      </label>
+    
+    <a href="./" title="XS项目开发介绍" class="md-nav__link md-nav__link--active">
+      XS项目开发介绍
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    文件后缀解释
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    激活文件
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -235,15 +280,69 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    文件后缀解释
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    激活文件
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
                 
-                  <h1>Getting started</h1>
+                  <h1>XS项目开发介绍</h1>
                 
-                
+                <h2 id="_1">文件后缀解释</h2>
+<ul>
+<li>hdbschema - 建立数据库 schema 使用的文件，文件名为 schema 的名字，ALPMARS.hdbschema 文件内容</li>
+</ul>
+<p><img alt="ALPMARS.hdbschema" src="../images/alpmars-hdbschema.png" /></p>
+<p>说明: 上述文件激活以后，还需要配置相关的 object 权限，用户才能够看到。</p>
+<ul>
+<li>
+<p>.xsapp - 一个空文件</p>
+</li>
+<li>
+<p>.xsaccess - 配置web服务相关的一些访问控制或者安全设置，文件内容如下:</p>
+</li>
+</ul>
+<p><img alt=".xsaccess" src="../images/xsaccess.png" /></p>
+<ul>
+<li>hdbdd - 数据库定义文件，后面详细介绍</li>
+</ul>
+<h2 id="_2">激活文件</h2>
                 
                   
                 
@@ -261,6 +360,27 @@
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href=".." title="建立开发环境" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                建立开发环境
+              </span>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
