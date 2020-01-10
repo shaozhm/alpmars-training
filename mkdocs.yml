@@ -11,5 +11,5 @@ markdown_extensions:
 - pymdownx.superfences
 
 pages:
-- 开发环境介绍: 'index.md'
-- 使用hdbdd文件建立数据库表结构: 'hdbdd-getting-started.md'
+- 建立开发环境: 'index.md'
+- XS项目开发介绍: 'db-getting-started.md'
