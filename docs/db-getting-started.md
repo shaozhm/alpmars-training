@@ -53,3 +53,6 @@ schema_name = "ALPMARS";
 授权用户可以使用 adminstration prespective 模式下 Catalog 目录下有 ALPMARS schema 及看到下面所有对象
 
 ![schema view](./images/schema-view.png)
+
+## Open SQL Console
+![open SQL console](./images/open-sql-console.png)
