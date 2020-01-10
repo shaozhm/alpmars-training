@@ -44,4 +44,9 @@ schema_name = "ALPMARS";
 
 ![activate-file](./images/activate-files.png)
 
+## 添加 schema 访问权限
+使用 SYSTEM 用户登陆，选择用户账户 ( zhimindemo ) 添加 object privileges ( Schema ALPMARS object), 下面使用的是 web workbench 来完成（hana studio 同理）
+
+![add object privileges by system user](./images/add-object-privilege.png)
+
 
