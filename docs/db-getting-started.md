@@ -168,5 +168,6 @@ context demo
 
 
 ## HANA CDS LocalDate & UTCTimestamp
-LocalDate could be mapping to DATE or DAYDATE
-UTCTimestamp could be mapping to LONGDATE or TIMESTAMP
+* LocalDate could be mapping to DATE or DAYDATE
+
+* UTCTimestamp could be mapping to LONGDATE or TIMESTAMP
