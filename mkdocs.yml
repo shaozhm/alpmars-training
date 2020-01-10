@@ -14,3 +14,4 @@ pages:
 - 建立开发环境: 'index.md'
 - XS项目文件及激活: 'xs-project.md'
 - HDBDD文件: 'db-getting-started.md'
+- 建模 calculation view: 'modeling.md'
