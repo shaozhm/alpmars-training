@@ -29,4 +29,9 @@
 ![Development Prespective](./images/development-prespective.png)
   
 * 在 SAP HANA Administration Console 模式下
-  
+
+  ![Administration Prespective](./images/administration-prespective-top-right.png)
+
+ 在 Systems TAB 下，能够看到 Catalog, Content, Provisioning 和 Security 四个分类目录
+ 
+ ![Administration Prespective](./images/administration-prespective.png)
