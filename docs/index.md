@@ -25,7 +25,8 @@
   ![Development Prespective](./images/development-prespective-top-right.png)
   
     * 我们可以看到本地 workspace 下的所有包结构，并且可以 checkout 项目
-     ![Development Prespective](./images/development-prespective.png)
+
+![Development Prespective](./images/development-prespective.png)
   
 * 在 SAP HANA Administration Console 模式下
   
