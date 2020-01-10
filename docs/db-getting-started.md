@@ -121,3 +121,8 @@ context demo
 ## 对应生成的数据库表
 
 ![table-names](./images/table-names.png)
+
+
+## associate 和 type 类型生成的表字段
+
+![association](./images/association.png)
