@@ -14,4 +14,9 @@
 * hdbdd - 数据库定义文件，后面详细介绍
 
 ## 激活文件
+开发修改文件以后，需要激活文件。激活的文件会同步到 hana repository, 其他人可以得到修改后的文件更新。
+如何激活文件如下图：
+
+![activate-file](./images/activate-file.png)
+
 
