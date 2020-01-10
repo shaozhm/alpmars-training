@@ -36,7 +36,7 @@
     
     
       
-        <title>XS项目开发介绍 - HANA XSC 基础培训</title>
+        <title>XS项目文件及激活 - HANA XSC 基础培训</title>
       
     
     
@@ -103,7 +103,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                XS项目开发介绍
+                XS项目文件及激活
               
             </span>
           
@@ -233,11 +233,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        XS项目开发介绍
+        XS项目文件及激活
       </label>
     
-    <a href="./" title="XS项目开发介绍" class="md-nav__link md-nav__link--active">
-      XS项目开发介绍
+    <a href="./" title="XS项目文件及激活" class="md-nav__link md-nav__link--active">
+      XS项目文件及激活
     </a>
     
       
@@ -258,6 +258,13 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     激活文件
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schema" class="md-nav__link">
+    添加 schema 访问权限
   </a>
   
 </li>
@@ -305,6 +312,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#schema" class="md-nav__link">
+    添加 schema 访问权限
+  </a>
+  
+</li>
+      
       
       
       
@@ -322,7 +336,7 @@
               
                 
                 
-                  <h1>XS项目开发介绍</h1>
+                  <h1>XS项目文件及激活</h1>
                 
                 <h2 id="_1">文件后缀解释</h2>
 <ul>
@@ -368,6 +382,9 @@
 <p>开发修改文件以后，需要激活文件。激活的文件会同步到 hana repository, 其他人可以得到修改后的文件更新。
 如何激活文件如下图：</p>
 <p><img alt="activate-file" src="../images/activate-files.png" /></p>
+<h2 id="schema">添加 schema 访问权限</h2>
+<p>使用 SYSTEM 用户登陆，选择用户账户 ( zhimindemo ) 添加 object privileges ( Schema ALPMARS object), 下面使用的是 web workbench 来完成（hana studio 同理）</p>
+<p><img alt="add object privileges by system user" src="../images/add-object-privilege.png" /></p>
                 
                   
                 
