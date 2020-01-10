@@ -126,3 +126,38 @@ context demo
 ## associate 和 type 类型生成的表字段
 
 ![association](./images/association.png)
+
+
+## Data-Type Mapping from SAP HANA to CDS
+| SAP HANA Type (hdbtable) | CDS Type (hdbdd) |
+| :------------------------------|: --------------------| 
+|    NVARCHAR                      |   String                   |
+|    SHORTTEXT                     |   String                  |
+|    NCLOB | LargeString |
+|    TEXT   |   LargeString |
+|   VARBINARY |   Binary |
+|   BLOB  |  LargeBinary  |
+|  INTEGER  |   Integer   |
+|   INT |   Integer  |
+|   BIGINT   |   Integer64   |
+|  DECIMAL(p,s)  |   Decimal(p,s)   |
+|  DECIMAL    |   DecimalFloat  | 
+|  DOUBLE  |   BinaryFloat   |
+|   DAYDATE   |   LocalDate   |
+|   DATE   |    LocalDate |
+| SECONDTIME |   LocalTime   |
+|  TIME   |   LocalTime    |
+|  SECONDDATE   |   UTCDateTime   |
+|   LONGDATE    |    UTCTimestamp    |
+|  TIMESTAMP    |   UTCTimestamp   |
+|   ALPHANUM    |  hana.ALPHANUM |
+| SMALLINT | hana.SMALLINT |
+| TINYINT | hana.TINYINT |
+| SMALLDECIMAL | hana.SMALLDECIMAL |
+| REAL | hana.REAL |
+| VARCHAR |  hana.VARCHAR  |
+| CLOB  | hana.CLOB  |
+| BINARY | hana.BINARY |
+| ST_POINT | hana.ST_POINT |
+| ST_GEOMETRY |  hana.ST_GEOMETRY |
+
