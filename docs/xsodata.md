@@ -180,3 +180,8 @@ http://zhiminipmi.z.com:8000/zhimin/demo/services/demo.xsodata/Vehicle(10000000)
     </content>
 </entry>
 ```
+
+## 如果访问具体的 entity 出现 XSOdata [258] insufficient privilege 错误
+
+![XSOdata insufficient privilege](./images/xsodata_access_insufficient_privilege.png)
+
