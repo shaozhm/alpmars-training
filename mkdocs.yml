@@ -16,3 +16,4 @@ pages:
 - HDBDD文件: 'db-getting-started.md'
 - 数据导入: 'data-load.md'
 - 建模 calculation view: 'modeling.md'
+- XSODATA: 'xsodata.md'
