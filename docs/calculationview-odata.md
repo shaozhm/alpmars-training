@@ -7,6 +7,7 @@ service namespace "zhimin.demo.services"  {
 ```
 
 ## 查看数据
+http://zhiminipmi.z.com:8000/zhimin/demo/services/demo.xsodata/FeeSummary
 
 ``` xml
 <feed xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://www.w3.org/2005/Atom" xml:base="http://zhiminipmi.z.com:8000/zhimin/demo/services/demo.xsodata/">

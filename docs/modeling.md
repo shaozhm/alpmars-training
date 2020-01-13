@@ -49,3 +49,23 @@
 [https://sap.github.io/cloud-s4ext/week-4/unit-4/](https://sap.github.io/cloud-s4ext/week-4/unit-4/)
 
 ![data-preview-modeling](./images/pic004--data-preview-modeling.jpg)
+
+[Understanding a Graphical Calculation View in SAP HANA](http://teachmehana.com/graphical-calculation-view-sap-hana/)
+
+[Graphical Calculation View Nodes - JOIN](http://teachmehana.com/graphical-calculation-view-sap-hana-2/)
+
+[Filters:Type 1 - SAP HANA Constant Filters](http://teachmehana.com/sap-hana-filters-graphical-view/)
+
+[Filters:Type 2 - SAP HANA Variables](http://teachmehana.com/sap-hana-variables-graphical-views/)
+
+[Filters:Type 3 - SAP HANA Input Parameters](http://teachmehana.com/sap-hana-input-parameters-graphical-view/)
+
+[Calculated column in SAP HANA](http://teachmehana.com/sap-hana-calculated-column-view/)
+
+[Restricted column in SAP HANA](http://teachmehana.com/sap-hana-restricted-column/)
+
+[Rank node in SAP HANA Calculation View](http://teachmehana.com/rank-node-sap-hana-calculation-view/)
+
+[Aggregation node in SAP HANA Calculation View](http://teachmehana.com/aggregation-node-sap-hana-calculation-view/)
+
+[SAP HANA Union node in Calculation View](http://teachmehana.com/sap-hana-union-node-calculation-view/)
