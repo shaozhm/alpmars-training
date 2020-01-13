@@ -304,9 +304,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#odata-httpzhiminipmizcom8000zhimindemoservicesdemoxsodata" class="md-nav__link">
-    访问 ODATA (http://zhiminipmi.z.com:8000/zhimin/demo/services/demo.xsodata)
+  <a href="#odata" class="md-nav__link">
+    访问 ODATA
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#httpzhiminipmizcom8000zhimindemoservicesdemoxsodata" class="md-nav__link">
+    http://zhiminipmi.z.com:8000/zhimin/demo/services/demo.xsodata/
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#odata-metadata-httpzhiminipmizcom8000zhimindemoservicesdemoxsodatametadata" class="md-nav__link">
+    ODATA metadata 信息 http://zhiminipmi.z.com:8000/zhimin/demo/services/demo.xsodata/$metadata
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -347,9 +367,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#odata-httpzhiminipmizcom8000zhimindemoservicesdemoxsodata" class="md-nav__link">
-    访问 ODATA (http://zhiminipmi.z.com:8000/zhimin/demo/services/demo.xsodata)
+  <a href="#odata" class="md-nav__link">
+    访问 ODATA
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#httpzhiminipmizcom8000zhimindemoservicesdemoxsodata" class="md-nav__link">
+    http://zhiminipmi.z.com:8000/zhimin/demo/services/demo.xsodata/
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#odata-metadata-httpzhiminipmizcom8000zhimindemoservicesdemoxsodatametadata" class="md-nav__link">
+    ODATA metadata 信息 http://zhiminipmi.z.com:8000/zhimin/demo/services/demo.xsodata/$metadata
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -388,7 +428,8 @@
 <span class="p">}</span>
 </pre></div>
 
-<h2 id="odata-httpzhiminipmizcom8000zhimindemoservicesdemoxsodata">访问 ODATA (http://zhiminipmi.z.com:8000/zhimin/demo/services/demo.xsodata)</h2>
+<h2 id="odata">访问 ODATA</h2>
+<h3 id="httpzhiminipmizcom8000zhimindemoservicesdemoxsodata">http://zhiminipmi.z.com:8000/zhimin/demo/services/demo.xsodata/</h3>
 <div class="codehilite"><pre><span></span><span class="nt">&lt;service</span> <span class="na">xmlns:atom=</span><span class="s">&quot;http://www.w3.org/2005/Atom&quot;</span> <span class="na">xmlns:app=</span><span class="s">&quot;http://www.w3.org/2007/app&quot;</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/2007/app&quot;</span> <span class="na">xml:base=</span><span class="s">&quot;http://zhiminipmi.z.com:8000/zhimin/demo/services/demo.xsodata/&quot;</span><span class="nt">&gt;</span>
  <span class="nt">&lt;workspace&gt;</span>
     <span class="nt">&lt;atom:title&gt;</span>Default<span class="nt">&lt;/atom:title&gt;</span>
@@ -400,6 +441,65 @@
     <span class="nt">&lt;/collection&gt;</span>
  <span class="nt">&lt;/workspace&gt;</span>
 <span class="nt">&lt;/service&gt;</span>
+</pre></div>
+
+<h3 id="odata-metadata-httpzhiminipmizcom8000zhimindemoservicesdemoxsodatametadata">ODATA metadata 信息 http://zhiminipmi.z.com:8000/zhimin/demo/services/demo.xsodata/$metadata</h3>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;edmx:Edmx</span> <span class="na">xmlns:edmx=</span><span class="s">&quot;http://schemas.microsoft.com/ado/2007/06/edmx&quot;</span> <span class="na">Version=</span><span class="s">&quot;1.0&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;edmx:DataServices</span> <span class="na">xmlns:m=</span><span class="s">&quot;http://schemas.microsoft.com/ado/2007/08/dataservices/metadata&quot;</span>     <span class="na">m:DataServiceVersion=</span><span class="s">&quot;2.0&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;Schema</span> <span class="na">xmlns:d=</span><span class="s">&quot;http://schemas.microsoft.com/ado/2007/08/dataservices&quot;</span>         <span class="na">xmlns:m=</span><span class="s">&quot;http://schemas.microsoft.com/ado/2007/08/dataservices/metadata&quot;</span>        <span class="na">xmlns=</span><span class="s">&quot;http://schemas.microsoft.com/ado/2008/09/edm&quot;</span> <span class="na">Namespace=</span><span class="s">&quot;zhimin.demo.services&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;EntityType</span> <span class="na">Name=</span><span class="s">&quot;VehicleType&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;Key&gt;</span>
+                    <span class="nt">&lt;PropertyRef</span> <span class="na">Name=</span><span class="s">&quot;UID&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;/Key&gt;</span>
+                <span class="nt">&lt;Property</span> <span class="na">Name=</span><span class="s">&quot;UID&quot;</span> <span class="na">Type=</span><span class="s">&quot;Edm.Int32&quot;</span> <span class="na">Nullable=</span><span class="s">&quot;false&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;Property</span> <span class="na">Name=</span><span class="s">&quot;VIN&quot;</span> <span class="na">Type=</span><span class="s">&quot;Edm.String&quot;</span> <span class="na">MaxLength=</span><span class="s">&quot;20&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;Property</span> <span class="na">Name=</span><span class="s">&quot;ENGINE_NO&quot;</span> <span class="na">Type=</span><span class="s">&quot;Edm.String&quot;</span> <span class="na">MaxLength=</span><span class="s">&quot;18&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;Property</span> <span class="na">Name=</span><span class="s">&quot;PLATE_NUMBER&quot;</span> <span class="na">Type=</span><span class="s">&quot;Edm.String&quot;</span> <span class="na">MaxLength=</span><span class="s">&quot;20&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;Property</span> <span class="na">Name=</span><span class="s">&quot;DOC_NUMBER&quot;</span> <span class="na">Type=</span><span class="s">&quot;Edm.String&quot;</span> <span class="na">MaxLength=</span><span class="s">&quot;18&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;Property</span> <span class="na">Name=</span><span class="s">&quot;CARD_ID&quot;</span> <span class="na">Type=</span><span class="s">&quot;Edm.String&quot;</span> <span class="na">MaxLength=</span><span class="s">&quot;18&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;Property</span> <span class="na">Name=</span><span class="s">&quot;MODEL&quot;</span> <span class="na">Type=</span><span class="s">&quot;Edm.String&quot;</span> <span class="na">MaxLength=</span><span class="s">&quot;100&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;Property</span> <span class="na">Name=</span><span class="s">&quot;MAKER&quot;</span> <span class="na">Type=</span><span class="s">&quot;Edm.String&quot;</span> <span class="na">MaxLength=</span><span class="s">&quot;100&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;Property</span> <span class="na">Name=</span><span class="s">&quot;LICENSE_VALID_FROM&quot;</span> <span class="na">Type=</span><span class="s">&quot;Edm.DateTime&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;Property</span> <span class="na">Name=</span><span class="s">&quot;LICENSE_VALID_TO&quot;</span> <span class="na">Type=</span><span class="s">&quot;Edm.DateTime&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;Property</span> <span class="na">Name=</span><span class="s">&quot;OP_CERT_NUMBER&quot;</span> <span class="na">Type=</span><span class="s">&quot;Edm.String&quot;</span> <span class="na">MaxLength=</span><span class="s">&quot;20&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;Property</span> <span class="na">Name=</span><span class="s">&quot;OP_CERT_VALID_FROM&quot;</span> <span class="na">Type=</span><span class="s">&quot;Edm.DateTime&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;Property</span> <span class="na">Name=</span><span class="s">&quot;OP_CERT_VALID_TO&quot;</span> <span class="na">Type=</span><span class="s">&quot;Edm.DateTime&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;Property</span> <span class="na">Name=</span><span class="s">&quot;PURCHASE_DATE&quot;</span> <span class="na">Type=</span><span class="s">&quot;Edm.DateTime&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;Property</span> <span class="na">Name=</span><span class="s">&quot;DELETE_FLAG&quot;</span> <span class="na">Type=</span><span class="s">&quot;Edm.String&quot;</span> <span class="na">DefaultValue=</span><span class="s">&quot;0&quot;</span> <span class="na">MaxLength=</span><span class="s">&quot;1&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;Property</span> <span class="na">Name=</span><span class="s">&quot;EFENCE_FLAG&quot;</span> <span class="na">Type=</span><span class="s">&quot;Edm.String&quot;</span> <span class="na">DefaultValue=</span><span class="s">&quot;0&quot;</span> <span class="na">MaxLength=</span><span class="s">&quot;1&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;NavigationProperty</span> <span class="na">Name=</span><span class="s">&quot;Fee&quot;</span> <span class="na">Relationship=</span><span class="s">&quot;zhimin.demo.services.Vehicle_FeesType&quot;</span>             <span class="na">FromRole=</span><span class="s">&quot;VehiclePrincipal&quot;</span> <span class="na">ToRole=</span><span class="s">&quot;FeeDependent&quot;</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;/EntityType&gt;</span>
+            <span class="nt">&lt;EntityType</span> <span class="na">Name=</span><span class="s">&quot;FeeType&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;Key&gt;</span>
+                    <span class="nt">&lt;PropertyRef</span> <span class="na">Name=</span><span class="s">&quot;UID&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;/Key&gt;</span>
+                <span class="nt">&lt;Property</span> <span class="na">Name=</span><span class="s">&quot;UID&quot;</span> <span class="na">Type=</span><span class="s">&quot;Edm.String&quot;</span> <span class="na">Nullable=</span><span class="s">&quot;false&quot;</span> <span class="na">MaxLength=</span><span class="s">&quot;32&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;Property</span> <span class="na">Name=</span><span class="s">&quot;REF_VEHICLE.UID&quot;</span> <span class="na">Type=</span><span class="s">&quot;Edm.Int32&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;Property</span> <span class="na">Name=</span><span class="s">&quot;CREATED_ON&quot;</span> <span class="na">Type=</span><span class="s">&quot;Edm.DateTime&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;Property</span> <span class="na">Name=</span><span class="s">&quot;CREATED_BY&quot;</span> <span class="na">Type=</span><span class="s">&quot;Edm.String&quot;</span> <span class="na">MaxLength=</span><span class="s">&quot;50&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;Property</span> <span class="na">Name=</span><span class="s">&quot;CHANGED_ON&quot;</span> <span class="na">Type=</span><span class="s">&quot;Edm.DateTime&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;Property</span> <span class="na">Name=</span><span class="s">&quot;CHANGED_BY&quot;</span> <span class="na">Type=</span><span class="s">&quot;Edm.String&quot;</span> <span class="na">MaxLength=</span><span class="s">&quot;50&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;Property</span> <span class="na">Name=</span><span class="s">&quot;FEE_START_DATE&quot;</span> <span class="na">Type=</span><span class="s">&quot;Edm.DateTime&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;Property</span> <span class="na">Name=</span><span class="s">&quot;FEE_END_DATE&quot;</span> <span class="na">Type=</span><span class="s">&quot;Edm.DateTime&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;Property</span> <span class="na">Name=</span><span class="s">&quot;FEE&quot;</span> <span class="na">Type=</span><span class="s">&quot;Edm.Double&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;Property</span> <span class="na">Name=</span><span class="s">&quot;CURRENCY_CODE&quot;</span> <span class="na">Type=</span><span class="s">&quot;Edm.String&quot;</span> <span class="na">DefaultValue=</span><span class="s">&quot;CNY&quot;</span> <span class="na">MaxLength=</span><span class="s">&quot;3&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;Property</span> <span class="na">Name=</span><span class="s">&quot;DELETE_FLAG&quot;</span> <span class="na">Type=</span><span class="s">&quot;Edm.String&quot;</span> <span class="na">DefaultValue=</span><span class="s">&quot;0&quot;</span> <span class="na">MaxLength=</span><span class="s">&quot;1&quot;</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;/EntityType&gt;</span>
+            <span class="nt">&lt;Association</span> <span class="na">Name=</span><span class="s">&quot;Vehicle_FeesType&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;End</span> <span class="na">Type=</span><span class="s">&quot;zhimin.demo.services.VehicleType&quot;</span> <span class="na">Role=</span><span class="s">&quot;VehiclePrincipal&quot;</span>    <span class="na">Multiplicity=</span><span class="s">&quot;1&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;End</span> <span class="na">Type=</span><span class="s">&quot;zhimin.demo.services.FeeType&quot;</span> <span class="na">Role=</span><span class="s">&quot;FeeDependent&quot;</span> <span class="na">Multiplicity=</span><span class="s">&quot;*&quot;</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;/Association&gt;</span>
+            <span class="nt">&lt;EntityContainer</span> <span class="na">Name=</span><span class="s">&quot;demo&quot;</span> <span class="na">m:IsDefaultEntityContainer=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;EntitySet</span> <span class="na">Name=</span><span class="s">&quot;Vehicle&quot;</span> <span class="na">EntityType=</span><span class="s">&quot;zhimin.demo.services.VehicleType&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;EntitySet</span> <span class="na">Name=</span><span class="s">&quot;Fee&quot;</span> <span class="na">EntityType=</span><span class="s">&quot;zhimin.demo.services.FeeType&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;AssociationSet</span> <span class="na">Name=</span><span class="s">&quot;Vehicle_Fees&quot;</span>     <span class="na">Association=</span><span class="s">&quot;zhimin.demo.services.Vehicle_FeesType&quot;</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;End</span> <span class="na">Role=</span><span class="s">&quot;VehiclePrincipal&quot;</span> <span class="na">EntitySet=</span><span class="s">&quot;Vehicle&quot;</span><span class="nt">/&gt;</span>
+                    <span class="nt">&lt;End</span> <span class="na">Role=</span><span class="s">&quot;FeeDependent&quot;</span> <span class="na">EntitySet=</span><span class="s">&quot;Fee&quot;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;/AssociationSet&gt;</span>
+            <span class="nt">&lt;/EntityContainer&gt;</span>
+        <span class="nt">&lt;/Schema&gt;</span>
+    <span class="nt">&lt;/edmx:DataServices&gt;</span>
+<span class="nt">&lt;/edmx:Edmx&gt;</span>
 </pre></div>
                 
                   
