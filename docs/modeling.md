@@ -1,5 +1,6 @@
 ## 图形化建模
 
+### 创建 Fee.calculationview
 ![modeling-menu-1](./images/modeling-menu-1.png)
 
 ![modeling-dialog-2](./images/modeling-dialog-2.png)
@@ -8,12 +9,15 @@
 
 ![modeling-window-4](./images/modeling-window-4.png)
 
+### 添加表对象
 ![modeling-5](./images/modeling-5.png)
 
 ![modeling-6](./images/modeling-6.png)
 
+### 建立关系
 ![modeling-7](./images/modeling-7.png)
 
+### 建立数据映射
 ![modeling-8](./images/modeling-8.png)
 
 ![modeling-9](./images/modeling-9.png)
@@ -24,4 +28,24 @@
 
 ![modeling-12](./images/modeling-12.png)
 
+### 修改类型
+
 ![modeling-13](./images/modeling-13.png)
+
+![modeling-14](./images/modeling-14.png)
+
+![modeling-15](./images/modeling-15.png)
+
+### 数据预览
+![modeling-16](./images/modeling-16.png)
+
+![modeling-17](./images/modeling-17.png)
+
+## 查看实际生成的数据库对象
+实际的数据库对象由 _SYS_BIC 生成
+![modeling-18](./images/modeling-18.png)
+
+## 更多的参考链接
+[https://sap.github.io/cloud-s4ext/week-4/unit-4/](https://sap.github.io/cloud-s4ext/week-4/unit-4/)
+
+![data-preview-modeling](./images/pic004--data-preview-modeling.jpg)

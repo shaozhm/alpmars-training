@@ -18,5 +18,6 @@ pages:
 - XSODATA: 'xsodata.md'
 - 创建视图: 'view.md'
 - XSJS: 'xsjs.md'
-- 测试: 'test.md'
-- Calculation View: 'modeling.md'
+- 图形化建模 Calculation View: 'modeling.md'
+- ODATA for Calculation View: 'calculationview-odata.md'
+- 脚本建模 Calculation View: 'scripted-modeling.md'
