@@ -2,6 +2,8 @@
 
 ![xsjs architecture](./images/xsjs_architecture.png)
 
+![Native SAP HANA Architecture](./images/native-SAP-HANA-architecture.png)
+
 ## 创建 xsjslib 文件，为 FeeView ODATA 添加增删改功能
 
 zhimin/demo/xsjslib/fee.xsjslib
