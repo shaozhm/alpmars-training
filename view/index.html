@@ -36,7 +36,7 @@
     
     
       
-        <title>建模 calculation view - HANA XSC 基础培训</title>
+        <title>创建视图 - HANA XSC 基础培训</title>
       
     
     
@@ -77,6 +77,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#feehdbview-fee-delete_flag1" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -99,7 +103,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                建模 calculation view
+                创建视图
               
             </span>
           
@@ -256,18 +260,6 @@
       
       
 
-
-  <li class="md-nav__item">
-    <a href="../view/" title="创建视图" class="md-nav__link">
-      创建视图
-    </a>
-  </li>
-
-    
-      
-      
-      
-
   
 
 
@@ -276,10 +268,49 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
     
-    <a href="./" title="建模 calculation view" class="md-nav__link md-nav__link--active">
-      建模 calculation view
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        创建视图
+      </label>
+    
+    <a href="./" title="创建视图" class="md-nav__link md-nav__link--active">
+      创建视图
     </a>
     
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#feehdbview-fee-delete_flag1" class="md-nav__link">
+    创建视图 Fee.hdbview 文件，把表 Fee 中 DELETE_FLAG=1 的数据过滤掉
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../modeling/" title="建模 calculation view" class="md-nav__link">
+      建模 calculation view
+    </a>
   </li>
 
     
@@ -314,15 +345,53 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#feehdbview-fee-delete_flag1" class="md-nav__link">
+    创建视图 Fee.hdbview 文件，把表 Fee 中 DELETE_FLAG=1 的数据过滤掉
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
                 
-                  <h1>建模 calculation view</h1>
+                  <h1>创建视图</h1>
                 
-                
+                <h2 id="feehdbview-fee-delete_flag1">创建视图 Fee.hdbview 文件，把表 Fee 中 DELETE_FLAG=1 的数据过滤掉</h2>
+<div class="codehilite"><pre><span></span><span class="c1">--费用视图</span>
+<span class="k">VIEW</span> <span class="ss">&quot;FEE_VIEW&quot;</span> <span class="k">AS</span>
+
+<span class="k">SELECT</span>
+    <span class="n">fee</span><span class="p">.</span><span class="ss">&quot;UID&quot;</span><span class="p">,</span> <span class="n">fee</span><span class="p">.</span><span class="ss">&quot;REF_VEHICLE.UID&quot;</span><span class="p">,</span> <span class="n">vehicle</span><span class="p">.</span><span class="ss">&quot;PLATE_NUMBER&quot;</span><span class="p">,</span> <span class="n">fee</span><span class="p">.</span><span class="ss">&quot;CREATED_ON&quot;</span><span class="p">,</span> <span class="n">fee</span><span class="p">.</span><span class="ss">&quot;CREATED_BY&quot;</span><span class="p">,</span> <span class="n">fee</span><span class="p">.</span><span class="ss">&quot;CHANGED_ON&quot;</span><span class="p">,</span> <span class="n">fee</span><span class="p">.</span><span class="ss">&quot;CHANGED_BY&quot;</span><span class="p">,</span> <span class="n">fee</span><span class="p">.</span><span class="ss">&quot;FEE_START_DATE&quot;</span><span class="p">,</span> <span class="n">fee</span><span class="p">.</span><span class="ss">&quot;FEE_END_DATE&quot;</span><span class="p">,</span> <span class="n">fee</span><span class="p">.</span><span class="ss">&quot;FEE&quot;</span><span class="p">,</span> <span class="n">fee</span><span class="p">.</span><span class="ss">&quot;CURRENCY_CODE&quot;</span>
+<span class="k">FROM</span> <span class="ss">&quot;DrivingSafety.FEE&quot;</span> <span class="k">AS</span> <span class="n">fee</span>
+<span class="k">LEFT</span> <span class="k">JOIN</span> <span class="ss">&quot;DrivingSafety.VEHICLE&quot;</span> <span class="k">AS</span> <span class="n">vehicle</span> <span class="k">ON</span> <span class="n">fee</span><span class="p">.</span><span class="ss">&quot;REF_VEHICLE.UID&quot;</span> <span class="o">=</span> <span class="n">vehicle</span><span class="p">.</span><span class="ss">&quot;UID&quot;</span>
+<span class="k">WHERE</span> <span class="n">fee</span><span class="p">.</span><span class="n">DELETE_FLAG</span><span class="o">=</span><span class="mi">0</span>
+</pre></div>
                 
                   
                 
@@ -344,7 +413,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../view/" title="创建视图" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../data-load/" title="数据导入" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -353,19 +422,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                创建视图
+                数据导入
               </span>
             </div>
           </a>
         
         
-          <a href="../xsodata/" title="XSODATA" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../modeling/" title="建模 calculation view" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                XSODATA
+                建模 calculation view
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
