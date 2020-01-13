@@ -19,3 +19,9 @@
 ![modeling-9](./images/modeling-9.png)
 
 ![modeling-10](./images/modeling-10.png)
+
+![modeling-11](./images/modeling-11.png)
+
+![modeling-12](./images/modeling-12.png)
+
+![modeling-13](./images/modeling-13.png)
