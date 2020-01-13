@@ -185,3 +185,6 @@ http://zhiminipmi.z.com:8000/zhimin/demo/services/demo.xsodata/Vehicle(10000000)
 
 ![XSOdata insufficient privilege](./images/xsodata_access_insufficient_privilege.png)
 
+The user already has EXECUTE, SELECT on shema where odata is created, and on both _SYS_REPO and _SYS_BIC. [参考链接](https://answers.sap.com/questions/212419/xsodata-258-insufficient-privilege.html)
+
+![_sys_bi_cp_all](./images/_sys_bi_cp_all.png)
