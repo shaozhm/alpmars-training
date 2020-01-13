@@ -134,3 +134,10 @@ service namespace "zhimin.demo.services"  {
     update using "zhimin.demo.xsjslib:fee.xsjslib::fee_update_using";
 }
 ```
+
+## XSJS 参考文档
+SAP_HANA_Platform_SPS04_044_complete_doc_set_en
+* SAP_HANA_XS_JavaScript_API_Reference_en.zip
+* SAP_HANA_XS_JavaScript_Reference_en.pdf
+
+![xsjs architecture](./images/xsjs_architecture.png)
