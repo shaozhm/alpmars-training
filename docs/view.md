@@ -24,6 +24,9 @@
 
 ``` js
 service namespace "zhimin.demo.services"  { 
-    "zhimin.demo.db::demo.FEE_VIEW" as "FeeView" key ("UID");
+    "zhimin.demo.db::demo.FEE_VIEW" as "FeeView" key ("UID")
+    create forbidden
+    update forbidden
+    delete forbidden;
 }
 ```
