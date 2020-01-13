@@ -77,6 +77,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#_1" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -252,9 +256,43 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        数据导入
+      </label>
+    
     <a href="./" title="数据导入" class="md-nav__link md-nav__link--active">
       数据导入
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    建立数据导入
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    激活文件
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -290,6 +328,42 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    建立数据导入
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    激活文件
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -298,7 +372,36 @@
                 
                   <h1>数据导入</h1>
                 
-                
+                <h2 id="_1">建立数据导入</h2>
+<p>配置文件 zhimin/demo/db/loads/demo.hdbti</p>
+<div class="codehilite"><pre><span></span><span class="kr">import</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span>
+        <span class="nx">cdstable</span> <span class="o">=</span> <span class="s2">&quot;zhimin.demo.db::demo.VEHICLE&quot;</span><span class="p">;</span>
+        <span class="nx">file</span> <span class="o">=</span> <span class="s2">&quot;zhimin.demo.db.loads:VEHICLE.csv&quot;</span><span class="p">;</span>
+        <span class="nx">header</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+        <span class="nx">useHeaderNames</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nx">cdstable</span> <span class="o">=</span> <span class="s2">&quot;zhimin.demo.db::demo.FEE&quot;</span><span class="p">;</span>
+        <span class="nx">file</span> <span class="o">=</span> <span class="s2">&quot;zhimin.demo.db.loads:FEE.csv&quot;</span><span class="p">;</span>
+        <span class="nx">header</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+        <span class="nx">delimField</span> <span class="o">=</span> <span class="s2">&quot;;&quot;</span><span class="p">;</span>
+        <span class="nx">useHeaderNames</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">];</span>
+</pre></div>
+
+<p>数据文件 VEHICLE.csv</p>
+<div class="codehilite"><pre><span></span><span class="err">UID,VIN,ENGINE_NO,PLATE_NUMBER,DOC_NUMBER,CARD_ID,LICENSE_VALID_FROM,LICENSE_VALID_TO,OP_CERT_NUMBER,OP_CERT_VALID_FROM,OP_CERT_VALID_TO,MAKER,MODEL,PURCHASE_DATE</span>
+<span class="err">1,LFWSRXSJ4KAD14686,53170940,豫NR5926,411401082943,4150028005042,20190417,20200401,411406000775,20190422,20200430,解放,重型半挂牵引车,20190417</span>
+</pre></div>
+
+<p>数据文件 FEE.csv
+<div class="codehilite"><pre><span></span><span class="err">UID;REF_VEHICLE.UID;CREATED_ON;CREATED_BY;CHANGED_ON;CHANGED_BY;FEE_START_DATE;FEE_END_DATE;FEE;CURRENCY_CODE;DELETE_FLAG</span>
+<span class="err">D1BE04B044C5AAEA16004C0016A69737;10000000;20191220060934;ZHIMIN.SHAO@SAP.COM;20191220060934;ZHIMIN.SHAO@SAP.COM;20190630;20190730;120;CNY;0</span>
+</pre></div></p>
+<h2 id="_2">激活文件</h2>
+<p><img alt="activate files" src="../images/activate_csv_file.png" /></p>
                 
                   
                 
