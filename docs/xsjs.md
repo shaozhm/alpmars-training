@@ -1,3 +1,7 @@
+## XSJS 架构
+
+![xsjs architecture](./images/xsjs_architecture.png)
+
 ## 创建 xsjslib 文件，为 FeeView ODATA 添加增删改功能
 
 zhimin/demo/xsjslib/fee.xsjslib
@@ -137,7 +141,8 @@ service namespace "zhimin.demo.services"  {
 
 ## XSJS 参考文档
 SAP_HANA_Platform_SPS04_044_complete_doc_set_en
-* SAP_HANA_XS_JavaScript_API_Reference_en.zip
-* SAP_HANA_XS_JavaScript_Reference_en.pdf
 
-![xsjs architecture](./images/xsjs_architecture.png)
+    * SAP_HANA_XS_JavaScript_API_Reference_en.zip
+    * SAP_HANA_XS_JavaScript_Reference_en.pdf
+
+
