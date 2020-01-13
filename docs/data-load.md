@@ -20,6 +20,9 @@ import = [
 ];
 
 ```
+数据表 VEHICLE 
+
+![table_vehicle](./images/table_vehicle.png)
 
 数据文件 VEHICLE.csv
 
