@@ -36,7 +36,7 @@
     
     
       
-        <title>建模 calculation view - HANA XSC 基础培训</title>
+        <title>XSODATA - HANA XSC 基础培训</title>
       
     
     
@@ -77,6 +77,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#demoxsodata-zhimindemoservicesdemoxsodata" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -99,7 +103,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                建模 calculation view
+                XSODATA
               
             </span>
           
@@ -256,6 +260,18 @@
       
       
 
+
+  <li class="md-nav__item">
+    <a href="../modeling/" title="建模 calculation view" class="md-nav__link">
+      建模 calculation view
+    </a>
+  </li>
+
+    
+      
+      
+      
+
   
 
 
@@ -264,22 +280,44 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
     
-    <a href="./" title="建模 calculation view" class="md-nav__link md-nav__link--active">
-      建模 calculation view
-    </a>
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        XSODATA
+      </label>
     
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../xsodata/" title="XSODATA" class="md-nav__link">
+    <a href="./" title="XSODATA" class="md-nav__link md-nav__link--active">
       XSODATA
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#demoxsodata-zhimindemoservicesdemoxsodata" class="md-nav__link">
+    建立文件 demo.xsodata (/zhimin/demo/services/demo.xsodata)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#odata-httpzhiminipmizcom8000zhimindemoservicesdemoxsodata" class="md-nav__link">
+    访问 ODATA (http://zhiminipmi.z.com:8000/zhimin/demo/services/demo.xsodata)
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -290,15 +328,67 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#demoxsodata-zhimindemoservicesdemoxsodata" class="md-nav__link">
+    建立文件 demo.xsodata (/zhimin/demo/services/demo.xsodata)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#odata-httpzhiminipmizcom8000zhimindemoservicesdemoxsodata" class="md-nav__link">
+    访问 ODATA (http://zhiminipmi.z.com:8000/zhimin/demo/services/demo.xsodata)
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
                 
-                  <h1>建模 calculation view</h1>
+                  <h1>XSODATA</h1>
                 
-                
+                <h2 id="demoxsodata-zhimindemoservicesdemoxsodata">建立文件 demo.xsodata (/zhimin/demo/services/demo.xsodata)</h2>
+<div class="codehilite"><pre><span></span><span class="nx">service</span> <span class="nx">namespace</span> <span class="s2">&quot;zhimin.demo.services&quot;</span>  <span class="p">{</span> 
+   <span class="s2">&quot;zhimin.demo.db::demo.VEHICLE&quot;</span> 
+   <span class="nx">as</span> <span class="s2">&quot;Vehicle&quot;</span>
+   <span class="nx">navigates</span> <span class="p">(</span><span class="s2">&quot;Vehicle_Fees&quot;</span> <span class="nx">as</span> <span class="s2">&quot;Fee&quot;</span><span class="p">);</span>
+
+   <span class="s2">&quot;zhimin.demo.db::demo.FEE&quot;</span> <span class="nx">as</span> <span class="s2">&quot;Fee&quot;</span><span class="p">;</span>
+
+   <span class="nx">association</span> <span class="s2">&quot;Vehicle_Fees&quot;</span> <span class="nx">principal</span> <span class="s2">&quot;Vehicle&quot;</span><span class="p">(</span><span class="s2">&quot;UID&quot;</span><span class="p">)</span> <span class="nx">multiplicity</span> <span class="s2">&quot;1&quot;</span> <span class="nx">dependent</span> <span class="s2">&quot;Fee&quot;</span><span class="p">(</span><span class="s2">&quot;REF_VEHICLE.UID&quot;</span><span class="p">)</span> <span class="nx">multiplicity</span> <span class="s2">&quot;*&quot;</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="nx">settings</span> <span class="p">{</span>
+    <span class="nx">metadata</span> <span class="nx">cache</span><span class="o">-</span><span class="nx">control</span> <span class="s2">&quot;max-age= 604800&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<h2 id="odata-httpzhiminipmizcom8000zhimindemoservicesdemoxsodata">访问 ODATA (http://zhiminipmi.z.com:8000/zhimin/demo/services/demo.xsodata)</h2>
                 
                   
                 
@@ -320,7 +410,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../data-load/" title="数据导入" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../modeling/" title="建模 calculation view" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -329,25 +419,11 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                数据导入
+                建模 calculation view
               </span>
             </div>
           </a>
         
-        
-          <a href="../xsodata/" title="XSODATA" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                XSODATA
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
         
       </nav>
     </div>
