@@ -93,3 +93,52 @@ settings {
     </edmx:DataServices>
 </edmx:Edmx>
 ```
+
+
+### 查看 Vehicle EntitySet 
+http://zhiminipmi.z.com:8000/zhimin/demo/services/demo.xsodata/Vehicle
+
+``` xml
+<feed xml:base="http://zhiminipmi.z.com:8000/zhimin/demo/services/demo.xsodata/">
+    <title type="text">Vehicle</title>
+    <id>
+        http://zhiminipmi.z.com:8000/zhimin/demo/services/demo.xsodata/Vehicle
+    </id>
+    <author>
+        <name/>
+    </author>
+    <link rel="self" title="Vehicle" href="Vehicle"/>
+    <entry>
+        <id>
+            http://zhiminipmi.z.com:8000/zhimin/demo/services/demo.xsodata/Vehicle(10000000)
+        </id>
+        <title type="text"/>
+        <author>
+            <name/>
+        </author>
+        <link rel="edit" title="Vehicle" href="Vehicle(10000000)"/>
+        <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Fee"       type="application/atom+xml;type=feed" title="Fee" href="Vehicle(10000000)/Fee"/>
+        <category term="zhimin.demo.services.VehicleType"       scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+        <content type="application/xml">
+            <m:properties>
+                <d:UID m:type="Edm.Int32">10000000</d:UID>
+                <d:VIN m:type="Edm.String">LFWSRXSJ4KAD14686</d:VIN>
+                <d:ENGINE_NO m:type="Edm.String">53170940</d:ENGINE_NO>
+                <d:PLATE_NUMBER m:type="Edm.String">豫NR5926</d:PLATE_NUMBER>
+                <d:DOC_NUMBER m:type="Edm.String">411401082943</d:DOC_NUMBER>
+                <d:CARD_ID m:type="Edm.String">4150028005042</d:CARD_ID>
+                <d:MODEL m:type="Edm.String">重型半挂牵引车</d:MODEL>
+                <d:MAKER m:type="Edm.String">解放</d:MAKER>
+                <d:LICENSE_VALID_FROM       m:type="Edm.DateTime">2019-04-17T00:00:00.0000000</d:LICENSE_VALID_FROM>
+                <d:LICENSE_VALID_TO     m:type="Edm.DateTime">2020-04-01T00:00:00.0000000</d:LICENSE_VALID_TO>
+                <d:OP_CERT_NUMBER m:type="Edm.String">411406000775</d:OP_CERT_NUMBER>
+                <d:OP_CERT_VALID_FROM       m:type="Edm.DateTime">2019-04-22T00:00:00.0000000</d:OP_CERT_VALID_FROM>
+                <d:OP_CERT_VALID_TO     m:type="Edm.DateTime">2020-04-30T00:00:00.0000000</d:OP_CERT_VALID_TO>
+                <d:PURCHASE_DATE m:type="Edm.DateTime">2019-04-17T00:00:00.0000000</d:PURCHASE_DATE>
+                <d:DELETE_FLAG m:type="Edm.String">0</d:DELETE_FLAG>
+                <d:EFENCE_FLAG m:type="Edm.String">0</d:EFENCE_FLAG>
+            </m:properties>
+        </content>
+    </entry>
+</feed>
+```
