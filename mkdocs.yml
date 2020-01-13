@@ -18,4 +18,5 @@ pages:
 - XSODATA: 'xsodata.md'
 - 创建视图: 'view.md'
 - XSJS: 'xsjs.md'
-- 建模 calculation view: 'modeling.md'
+- 测试: 'test.md'
+- Calculation View: 'modeling.md'
