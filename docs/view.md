@@ -23,5 +23,7 @@
 ## 暴露 ODATA 
 
 ``` js
-
+service namespace "zhimin.demo.services"  { 
+    "zhimin.demo.db::demo.FEE_VIEW" as "FeeView" key ("UID");
+}
 ```
